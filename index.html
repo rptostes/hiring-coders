@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400;1,500&display=swap" rel="stylesheet">
+
+
+
+    <title>.:Rafael Tostes:.</title>
+</head>
+<body>
+    <header>
+            <h3>RTostes</h3>  
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/rafael-tostes-21a475106/">Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:rafaelptostes@hotmail.com">Email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+5522998869152">Whatsapp</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Rafael Tostes</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Este é o meu primeiro projeto como portifólio realizado no programa Hiring Coders #3. Aqui você encontrará meus contatos e outras informações sobre mim.
+                </p>
+                
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu Contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu email">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        
+        </section>
+    </main>
+    
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

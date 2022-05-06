@@ -1,0 +1,178 @@
+/* Predefinições Geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/* Deixando meus links sem estilo */
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 50;
+
+}
+
+/* Tirar formatação padrão da li dos links */
+a {
+    text-decoration: none;
+    
+}
+
+body{
+    background: url(./imagem/pexels-jéshoots-234527.jpg) no-repeat center center fixed;
+    background-size: cover;
+     /* background-repeat: no-repeat;
+    background-position: center center fixed;
+     deixa o back gorund ajustado na tela sempre */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid floralwhite; */
+    /* box-shadow: 1px 1px 5px 1px whitesmoke; */
+    /* border-bottom: 10px ridge bisque; */
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+
+    /* border-bottom: 2px dashed rgb(49, 173, 218); */
+    /* border-left: 2px dashed red; */
+}
+
+header ul li a:hover{
+    color: #937912;
+    text-decoration: dashed;
+    transition: 300ms;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.container .name h1{
+    font-size: 40px;
+
+}
+
+.container .name h5{
+    font-size: 15px;
+    
+}
+
+#arrow{
+    font-size: 20px;
+    padding: 10px;
+    cursor:  pointer;
+    animation: blink 1s steps(5, start)infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+    transition: 300ms;
+}
+
+#about p{
+    max-width: 600px;
+    font-size: 15px;
+    margin: 0 auto;
+} 
+
+#img_about{
+    padding: 10px;
+    border: border-box ;
+    margin: 10px;
+   
+
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double #f7f7f7;*/
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.form p{
+    font-size: 12px;
+}
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+
+
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c4b162 50%,  #937912 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;;
+    border: none;
+    cursor: pointer;
+    transition: 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin: 20px;
+    margin-left: -5px;
+    
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5{
+       font-size: 15px;  
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
